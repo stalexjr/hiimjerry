@@ -3,31 +3,71 @@
 <head>
 <title>I can be anything</title>
 <meta charset="utf-8">
+<style>
+ a {
+   color:black;
+   text-decoration:  none;
+ }
+ h1 {
+   font-size:60px;
+   text-align: center;
+   border-bottom:1px solid gray;
+   margin:0;
+   padding:20px;
+ }
+ ol {
+   border-right:1px solid gray;
+   width:100px;
+   margin:0;
+   padding:20px;
+ }
+ body{
+   margin:0;
+   }
+#grid{
+     display: grid;
+     grid-template-columns: 150px 1fr;
+   }
+   #grid ol{
+      padding-left:33px;
+    }
+   #abc{
+     padding-left:32px;
+   }
+   @media(max-width:800px){
+     #grid{
+          display: block;
+        }
+        ol {
+          border-right:none;
+        }
+        h1 {
+          border-bottom: none;
+        }
+   }
+</style>
 </head>
 <boby>
-  <h1><a href="index.html">I WILL BE</a><h1>
+  <h1><a href="index.html">I WILL BE</a></h1>
+  <div id="grid">
   <ol>
-    <strong>
       <li><a href="1.html">DREAM</a></li>
       <li><a href="2.html">NAME</a></li>
       <li><a href="3.html">MOTTO</a></li>
-  </strong>
   </ol>
-  <ul>
-    <strong>
-      <li>yihyun</li>
-      <li>woojin</li>
-      <li>5252sandwich</li>
-  </strong>
-  </ul>
-  <h2>MY NAME IS JERRY</h2>
-  <p>이름을 듣고 '어?? 내가 생각하는 제리아니야?'라고 생각 하실수 있는데
+  <div id="abc">
+    <h2>MY NAME IS JERRY</h2>
+    <p>
+    이름을 듣고 '어?? 내가 생각하는 제리아니야?'라고 생각 하실수 있는데
     생각하시는 그 제리맞다 톰과제리에 나오는 제리다.<BR><BR> 외국에서 흔히 쓰는 이름인지 아닌지는
     모르겠지만, 적어도 남자 이름보다 여자에 가까운 느낌이 든다.<BR><BR> 나를 모르시는 분들을 위해
     내 성별을 말씀드리자면 나는 남자다. 이제부터 '쟤는 남잔데 왜 이름이 제리야?'에 대한
     설명을 해드리고자 한다.<BR><BR> 정확한 날짜는 모르나 그 날은 추웠다.<BR><BR> 추워서 이불을 끝까지 덮고있어도
     발끝부터 시려오는것을 막을 수 없는 날씨,<BR><BR> '운동을 해야겠다' 맘을 먹지만 이불밖을 나가기까지
     수없이 많은 고민과, '내일할까?'라는 생각이 그 사이를 비집고 들어오는 날씨 그런 날씨였다.<BR><BR>
-    그때 나는 여자친구인 이현이랑 통화하고있었다.</p>
+    그때 나는 여자친구인 이현이랑 통화하고있었다.
+    </p>
+  </div>
+</div>
 </boby>
 </html>

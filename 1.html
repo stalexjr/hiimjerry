@@ -3,23 +3,61 @@
 <head>
 <title>I can be anything</title>
 <meta charset="utf-8">
+ <style>
+  a {
+    color:black;
+    text-decoration:  none;
+  }
+  h1 {
+    font-size:60px;
+    text-align: center;
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  body{
+    margin:0;
+  }
+ol{
+  border-right: 1px solid gray;
+  width:100px;
+  padding:20px;
+  margin:0;
+}
+#grid{
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid ol{
+  padding-left: 33px;
+}
+#abc{
+  padding-left: 32px;
+}
+@media(max-width:800px){
+  #grid{
+    display: block;
+  }
+  ol{
+    border-right: none;
+}
+    h1 {
+      border-bottom:none;
+    }
+  }
+}
+
+ </style>
 </head>
 <boby>
-  <h1><a href="index.html">I WILL BE</a><h1>
+  <h1><a href="index.html">I WILL BE</a></h1>
+  <div id="grid">
   <ol>
-    <strong>
       <li><a href="1.html">DREAM</a></li>
       <li><a href="2.html">NAME</a></li>
       <li><a href="3.html">MOTTO</a></li>
-  </strong>
   </ol>
-  <ul>
-    <strong>
-      <li>yihyun</li>
-      <li>woojin</li>
-      <li>5252sandwich</li>
-  </strong>
-  </ul>
+  <div id="abc">
   <h2>내 꿈에 대해</h2>
   <p><a href="https://www.youtube.com/watch?v=HHQXdILvsPE"
     target="_blank" title="Zootopia - Try Everything">
@@ -29,5 +67,7 @@
   <h2>Hi my name is Jerry</h2>
   I said i will be securety consultant becuz this jop looks like a cool<br>
   and than as far as i know get a high salary i like a money i have a high<br>
+</div>
+</div>
 </boby>
 </html>
